@@ -7,7 +7,10 @@ const adminHandler = require("./handlers/adminHandler");
 
 const client = new Client({
   authStrategy: new LocalAuth(),
-  puppeteer: { headless: true },
+  puppeteer: {
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"], // 👈 tambahkan ini
+  },
 });
 
 const ADMIN_NUMBERS = ["6281292744550@c.us"]; // Ganti dengan nomor admin WA
