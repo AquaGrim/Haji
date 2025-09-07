@@ -1,0 +1,20 @@
+{
+  "category": "Pendaftaran Haji",
+  "questions": [
+    {
+      "question": "Apa syarat mendaftar haji, Bagaimana prosedurnya?",
+      "answer": "foto nati dikirim",
+      "images": ["syarat_daftar.jpg"]
+    },
+    {
+      "question": "Kapan saya berangkat haji, Bagaimana cara cek nomor porsi haji?",
+      "answer": "website kemenag kemarin",
+      "images": []
+    },
+    {
+      "question": "Bagaimana cara mendaftar haji Khusus dan Prosedurnya , Berapa masa panggilnya?",
+      "answer": "Masa panggilnya 5 - 7 Tahun (yang mendaftar tahun 2025)",
+      "images": []
+    }
+  ]
+}

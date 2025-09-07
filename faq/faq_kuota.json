@@ -1,0 +1,14 @@
+[
+  {
+    "pertanyaan": "edit pertanyaan",
+    "jawaban": "edit jawaban"
+  },
+  {
+    "pertanyaan": "Berapa lama masa tunggu (waiting list) haji di daerah saya?",
+    "jawaban": "Rata-rata 10-30 tahun, tergantung provinsi. Cek di website Kemenag atau kantor Kemenag setempat."
+  },
+  {
+    "pertanyaan": "test 1",
+    "jawaban": "*📌 Kuota & Pendaftaran:*\n\n1. Bagaimana cara mendaftar haji reguler atau haji khusus?\n2. Berapa lama masa tunggu (waiting list) haji di daerah saya?\n\nBalas dengan *!jawab 1 [nomor pertanyaan]* untuk melihat jawaban."
+  }
+]
