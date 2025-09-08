@@ -1,0 +1,17 @@
+[
+    {
+      "pertanyaan": "Berapa Biaya Perjalanan Ibadah Haji (BPIH) tahun ini?",
+      "jawaban": "Besaran BPIH ditetapkan tiap tahun oleh Pemerintah bersama DPR RI. Silakan cek di situs resmi Kemenag.",
+      "images": ["bpih2025.jpg"]
+    },
+    {
+      "pertanyaan": "Bagaimana cara membayar setoran awal dan pelunasan haji?",
+      "jawaban": "Setoran awal dan pelunasan dilakukan melalui bank syariah yang bekerja sama dengan Kementerian Agama.",
+      "images": []
+    },
+    {
+      "pertanyaan": "Apakah ada cicilan atau tabungan haji di bank syariah?",
+      "jawaban": "Ya, bank syariah menyediakan program tabungan haji untuk mempermudah calon jamaah menabung hingga setoran awal terpenuhi.",
+      "images": []
+    }
+  ]

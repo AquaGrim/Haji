@@ -1,14 +1,22 @@
-[
-  {
-    "pertanyaan": "edit pertanyaan",
-    "jawaban": "edit jawaban"
-  },
-  {
-    "pertanyaan": "Berapa lama masa tunggu (waiting list) haji di daerah saya?",
-    "jawaban": "Rata-rata 10-30 tahun, tergantung provinsi. Cek di website Kemenag atau kantor Kemenag setempat."
-  },
-  {
-    "pertanyaan": "test 1",
-    "jawaban": "*📌 Kuota & Pendaftaran:*\n\n1. Bagaimana cara mendaftar haji reguler atau haji khusus?\n2. Berapa lama masa tunggu (waiting list) haji di daerah saya?\n\nBalas dengan *!jawab 1 [nomor pertanyaan]* untuk melihat jawaban."
-  }
+[  
+   {
+      "pertanyaan": "Bagaimana cara mendaftar haji reguler atau haji khusus?",
+      "jawaban": "Calon jamaah haji mendaftar di Kementerian Agama setempat dengan membawa dokumen identitas, KK, paspor, dan melakukan setoran awal di bank syariah. Untuk haji khusus, pendaftaran dilakukan melalui travel penyelenggara resmi dengan masa tunggu lebih singkat.",
+      "images": ["daftar_haji.jpg"]
+    },
+    {
+      "pertanyaan": "Berapa lama masa tunggu (waiting list) haji di daerah saya?",
+      "jawaban": "Rata-rata 10-30 tahun, tergantung provinsi. Cek di website Kemenag atau kantor Kemenag setempat.",
+      "images": []
+    },
+    {
+      "pertanyaan": "Apakah kuota haji setiap tahun sama?",
+      "jawaban": "Kuota haji ditetapkan setiap tahun oleh Pemerintah Indonesia berdasarkan hasil kesepakatan dengan Pemerintah Arab Saudi. Jumlah kuota bisa berbeda tiap tahunnya.",
+      "images": []
+    },
+    {
+      "pertanyaan": "Bisa pindah porsi atau alih porsi haji ke keluarga?",
+      "jawaban": "Pelimpahan porsi haji hanya bisa dilakukan untuk keluarga inti dengan syarat tertentu, sesuai aturan Kementerian Agama.",
+      "images": []
+    }
 ]
