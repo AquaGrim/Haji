@@ -9,6 +9,11 @@
       "jawaban": "Jamaah yang meninggal akan dimakamkan di Tanah Suci sesuai prosedur pemerintah Arab Saudi.",
       "images": []
     },
+      {
+      "pertanyaan": "Apa syarat pembatalan Haji, Bagaimana prosedurnya?",
+      "jawaban": "Syarat pembatalan haji bervariasi tergantung alasan, namun umumnya meliputi surat permohonan pembatalan, asli Nomor Porsi (NP), fotokopi KTP, dan fotokopi buku tabungan. Prosedurnya dimulai dari pengajuan permohonan ke Kantor Kementerian Agama (Kemenag) Kabupaten/Kota, diikuti verifikasi berkas oleh Kemenag, kemudian pengajuan ke tingkat pusat oleh Kemenag, pengajuan ke Badan Pengelola Keuangan Haji (BPKH) untuk pencairan dana, dan terakhir pencairan dana oleh bank. ",
+      "images": ["alur.jpg"]
+    },
     {
       "pertanyaan": "Apakah biaya haji bisa dikembalikan jika batal berangkat?",
       "jawaban": "Dana yang sudah disetorkan dapat ditarik kembali sesuai aturan pembatalan dari Kementerian Agama.",

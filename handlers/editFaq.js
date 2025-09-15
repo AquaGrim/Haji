@@ -1,90 +1,83 @@
 const fs = require("fs");
 const path = require("path");
-
-// arahkan sesuai strukturmu
 const faqDir = path.join(__dirname, "../faq");
+const imgDir = path.join(__dirname, "../images");
+
+// pastikan folder gambar ada
+if (!fs.existsSync(imgDir)) {
+  fs.mkdirSync(imgDir, { recursive: true });
+}
 
 module.exports = async (msg) => {
   try {
     const raw = (msg.body || "").trim();
-    console.log("📩 Raw:", raw);
-
-    // ambil hanya bagian setelah "!editfaq"
-    const m = raw.match(/^!editfaq\b\s*(.*)$/i);
-    if (!m || !m[1]) {
-      console.warn("⚠️ Perintah tidak sesuai pola !editfaq");
-      return msg.reply(
-        "❌ Format: !editfaq NamaKategori | Nomor | PertanyaanBaru | JawabanBaru"
-      );
+    if (!raw.toLowerCase().startsWith("!editfaq")) {
+      return; // bukan command
     }
 
-    const argsStr = m[1].trim();
-    console.log("🧩 Args after command:", argsStr);
+    // Format: !editfaq kategori | nomor | pertanyaan baru | jawaban baru
+    const m = raw.match(/^!editfaq\b\s*(.*)$/i);
+    if (!m || !m[1]) {
+      return msg.reply("❌ Format: !editfaq kategori | nomor | pertanyaan | jawaban");
+    }
 
-    // split berdasarkan pipa
-    const parts = argsStr
+    const parts = m[1]
       .split("|")
       .map((s) => s.trim())
       .filter(Boolean);
-    console.log("🔎 Parts:", parts);
 
     if (parts.length < 4) {
-      console.warn("⚠️ Parts kurang:", parts.length);
-      return msg.reply(
-        "❌ Format: !editfaq NamaKategori | Nomor | PertanyaanBaru | JawabanBaru"
-      );
+      return msg.reply("❌ Format: !editfaq kategori | nomor | pertanyaan | jawaban");
     }
 
-    // dukung kemungkinan ada ekstra "|" di jawaban → gabung sisanya
     const [catNameRaw, numStrRaw, newQ, ...rest] = parts;
     const newA = rest.join(" | ");
     const catName = catNameRaw.toLowerCase();
+    const index = parseInt(numStrRaw, 10) - 1;
     const filePath = path.join(faqDir, `${catName}.json`);
 
-    console.log("📂 Kategori:", catName, "→ file:", filePath);
-    console.log("🔢 NumStr:", numStrRaw, "Q:", newQ, "A:", newA);
-
     if (!fs.existsSync(filePath)) {
-      console.error("❌ File kategori tidak ada:", filePath);
       return msg.reply("❌ Kategori tidak ditemukan!");
     }
 
-    const rawData = fs.readFileSync(filePath, "utf8");
-    console.log("📄 Raw JSON len:", rawData.length);
-
-    let data;
-    try {
-      data = JSON.parse(rawData);
-    } catch (e) {
-      console.error("🔥 JSON invalid:", e);
-      return msg.reply("❌ File FAQ rusak/JSON tidak valid.");
-    }
-
-    const index = parseInt(numStrRaw, 10) - 1;
-    console.log("🔢 Index:", index, "Data length:", data.length);
+    const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
     if (Number.isNaN(index) || index < 0 || index >= data.length) {
-      console.warn("⚠️ Nomor tidak valid");
       return msg.reply("❌ Nomor pertanyaan tidak valid!");
     }
 
-    console.log("✏️ Before:", data[index]);
+    // update pertanyaan & jawaban
     data[index].pertanyaan = newQ;
     data[index].jawaban = newA;
-    console.log("✅ After:", data[index]);
+
+    // cek apakah ada media baru
+    if (msg.hasMedia) {
+      const media = await msg.downloadMedia();
+      if (media && media.data) {
+        const ext = media.mimetype.split("/")[1] || "jpg";
+        const fileName = `${Date.now()}.${ext}`;
+        const savePath = path.join(imgDir, fileName);
+
+        fs.writeFileSync(savePath, media.data, { encoding: "base64" });
+
+        // kalau data sudah ada images → replace
+        if (Array.isArray(data[index].images) && data[index].images.length > 0) {
+          data[index].images[0] = fileName;
+        } else {
+          data[index].images = [fileName];
+        }
+
+        console.log("📷 Gambar baru disimpan:", savePath);
+      }
+    }
 
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
-    console.log("💾 Saved:", filePath);
 
     return msg.reply(
-      `✅ Pertanyaan nomor ${
-        index + 1
-      } berhasil diedit!\n📌 Pertanyaan baru: ${newQ}`
+      `✅ Pertanyaan nomor ${index + 1} berhasil diedit!\n📌 Pertanyaan baru: ${newQ}`
     );
   } catch (err) {
-    console.error("🔥 Uncaught error editFaq:", err);
-    return msg.reply(
-      "❌ Terjadi error saat mengedit FAQ. Cek console untuk detail."
-    );
+    console.error("🔥 Error editfaq:", err);
+    return msg.reply("❌ Terjadi error saat mengedit FAQ. Cek console.");
   }
 };

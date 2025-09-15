@@ -1,22 +1,43 @@
-[  
-   {
-      "pertanyaan": "Bagaimana cara mendaftar haji reguler atau haji khusus?",
-      "jawaban": "Calon jamaah haji mendaftar di Kementerian Agama setempat dengan membawa dokumen identitas, KK, paspor, dan melakukan setoran awal di bank syariah. Untuk haji khusus, pendaftaran dilakukan melalui travel penyelenggara resmi dengan masa tunggu lebih singkat.",
-      "images": ["daftar_haji.jpg"]
-    },
-    {
-      "pertanyaan": "Berapa lama masa tunggu (waiting list) haji di daerah saya?",
-      "jawaban": "Rata-rata 10-30 tahun, tergantung provinsi. Cek di website Kemenag atau kantor Kemenag setempat.",
-      "images": []
-    },
-    {
-      "pertanyaan": "Apakah kuota haji setiap tahun sama?",
-      "jawaban": "Kuota haji ditetapkan setiap tahun oleh Pemerintah Indonesia berdasarkan hasil kesepakatan dengan Pemerintah Arab Saudi. Jumlah kuota bisa berbeda tiap tahunnya.",
-      "images": []
-    },
-    {
-      "pertanyaan": "Bisa pindah porsi atau alih porsi haji ke keluarga?",
-      "jawaban": "Pelimpahan porsi haji hanya bisa dilakukan untuk keluarga inti dengan syarat tertentu, sesuai aturan Kementerian Agama.",
-      "images": []
-    }
+[
+  {
+    "pertanyaan": "Apa syarat mendaftar haji, Bagaimana prosedurnya",
+    "jawaban": "Calon jamaah haji mendaftar di Kementerian Agama setempat dengan membawa dokumen identitas, KK, paspor, dan melakukan setoran awal di bank syariah.",
+    "images": [
+      "syarat.jpg"
+    ]
+  },
+  {
+    "pertanyaan": "Apa syarat mendaftar haji khusus, Bagaimana prosedurnya",
+    "jawaban": " Prosedurnya adalah memilih Penasihat Ibadah Haji Khusus (PIHK) resmi, menyiapkan dokumen yang dibutuhkan, membayar setoran awal ke rekening BPKH, dan mendapatkan nomor porsi haji dari Kemenag. Setelah itu, Anda akan menunggu jadwal keberangkatan sesuai dengan kuota yang ada.",
+    "images": [
+      "khusus.png"
+    ]
+  },
+  {
+    "pertanyaan": "Bagaimana prosedur pendaftaran umrah?",
+    "jawaban": "📌 Prosedur Pendaftaran Umrah:\n\ni. Calon jemaah umrah membawa berkas pendaftaran dan mendaftar di salah satu PPIU (Penyelenggara Perjalanan Ibadah Umrah) / travel umrah yang akan mengurus keberangkatan umrahnya.\n\nii. Calon jemaah umrah melakukan pembayaran sesuai dengan paket umrah yang dipilih.\n\niii. PPIU melaporkan pendaftaran, pembayaran, dan keberangkatan ke Ditjen PHU secara elektronik.\n\niv. Calon jemaah umrah mendapatkan pembinaan dan pelayanan sesuai dengan paket yang dipilih.",
+    "images": []
+  },
+  {
+    "pertanyaan": "Berapa lama masa tunggu (waiting list) haji di daerah saya?",
+    "jawaban": "Masa tunggu haji di Kabupaten Kuantan Singingi, Riau, dapat diperkirakan sekitar 26 tahun berdasarkan data Kementerian Agama per April 2025, namun ini adalah perkiraan rata-rata dan bisa bervariasi tergantung pada kuota provinsi dan jumlah pendaftar. Untuk mengetahui informasi yang paling akurat, Anda perlu memeriksa melalui situs resmi Kemenag atau aplikasi seperti SISKOHAT. ",
+    "images": []
+  },
+  {
+    "pertanyaan": "Apakah kuota haji setiap tahun sama?",
+    "jawaban": "Kuota haji ditetapkan setiap tahun oleh Pemerintah Indonesia berdasarkan hasil kesepakatan dengan Pemerintah Arab Saudi. Jumlah kuota bisa berbeda tiap tahunnya.",
+    "images": []
+  },
+  {
+    "pertanyaan": "Bisa pindah porsi atau alih porsi haji ke keluarga?",
+    "jawaban": "Pelimpahan porsi haji hanya bisa dilakukan untuk keluarga inti dengan syarat tertentu, sesuai aturan Kementerian Agama.",
+    "images": []
+  },
+  {
+    "pertanyaan": "test tanya",
+    "jawaban": "test jawab",
+    "images": [
+      "1757848233862.jpeg"
+    ]
+  }
 ]

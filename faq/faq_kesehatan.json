@@ -1,17 +1,17 @@
 [
     {
       "pertanyaan": "Vaksin apa saja yang wajib untuk jamaah haji?",
-      "jawaban": "Wajib: vaksin meningitis. Dianjurkan: vaksin influenza dan COVID-19 sesuai ketentuan terbaru.",
+      "jawaban": "1. Vaksin Meningitis\n\t\t\t\t\t\t\t\t2. Vaksin Influenza (Flu)",
       "images": []
     },
     {
       "pertanyaan": "Bagaimana pemeriksaan kesehatan calon jamaah?",
-      "jawaban": "Dilakukan di puskesmas atau rumah sakit yang ditunjuk, meliputi pemeriksaan fisik, laboratorium, dan riwayat penyakit.",
+      "jawaban": "Pemeriksaan kesehatan calon jamaah melibatkan beberapa tahap yang mencakup pemeriksaan fisik, laboratorium (cek darah dan urine), kognitif, mental, dan kemandirian dalam beraktivitas (ADL) untuk menentukan status istitha'ah (kemampuan fisik) dan memastikan jemaah layak menunaikan ibadah haji. Pemeriksaan ini meliputi pengukuran tekanan darah, EKG, tes gula darah, tes urine, dan tes kognitif untuk mengidentifikasi kondisi penyakit kronis dan memastikan jemaah dapat melakukan aktivitas harian secara mandiri. ",
       "images": []
     },
     {
       "pertanyaan": "Apakah ada pendampingan medis di Tanah Suci?",
-      "jawaban": "Ya, ada Tim Kesehatan Haji Indonesia (TKHI) yang mendampingi jamaah selama ibadah di Arab Saudi.",
+      "jawaban": "Ya, ada pendamping medis untuk jamaah haji di Tanah Suci.\n\nPemerintah Indonesia, melalui Kementerian Kesehatan RI, setiap tahun mengirimkan Tim Kesehatan Haji Indonesia (TKHI) untuk mendampingi dan melayani jamaah selama pelaksanaan ibadah haji, baik di Makkah, Madinah, maupun saat wukuf di Arafah, Muzdalifah, dan Mina.",
       "images": []
     }
   ]
