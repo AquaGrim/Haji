@@ -13,7 +13,11 @@ const client = new Client({
   },
 });
 
-const ADMIN_NUMBERS = ["6281292744550@c.us"];
+const ADMIN_NUMBERS = [
+  "6281292744550@c.us",
+  "6282225627800@c.us",
+  "62831838480040@c.us",
+];
 
 // === LOAD DATA FIRST CHAT ===
 const firstChatPath = path.join(__dirname, "data/firstChat.json");
